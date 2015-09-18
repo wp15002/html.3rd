@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <title>サービス案内</title>
 
+<meta name="viewpost" content="width=device-width">
+
 <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
 
 <style>
@@ -70,8 +72,6 @@ nav#bread	{
 article	{
 	width: 700px;
     float: right;
-	//margin-left: auto;
-	//margin-right: auto;
 	margin-bottom: 25px;
 }
 
@@ -218,7 +218,7 @@ footer {
 	}
 
 small{
-	font-size: 0.75em;
+	font-size: 10px;
 	font-style: normal;
 	text-align: left;
 	display:block;
@@ -243,7 +243,82 @@ small::before{
 	-ms-transform:rotate(-45deg) translate(62px,20px);
 }
 
+/*====== タブッレット 用の設定 ======*/
+@media only screen and (min-width: 600px) and (max-width: 899px){
+
+div#container{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 10px;
+	background-position: -3px 380px, 100px 460px;
+}
+
+header#pageheader img{
+	width: 100%;
+	height: auto;
+}
+
+article{
+	float: none;
+	width: auto;
+}
+
+}
+
+
+/*====== スマートフォン 用の設定 ======*/
+@media only screen and (max-width: 599px){
+
+div#container{
+	width: 100%;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding: 0 10px;
+	background-position: -3px 220px, 100px 280px;
+}
+
+header#pageheader img{
+	width: 100%;
+	height: auto;
+}
+
+article{
+	float: none;
+	width: auto;
+}
+
+div#sidebar{
+	float: none;
+}
+
+header#pageheader h1{
+	font-size: 24px;
+	margin-right: 15px;
+
+}
+
+header#pageheader p{
+	font-size: 10px;
+	text-align: left;
+	padding: 0;
+}
+
+article header h1{
+	float: none;
+}
+
+article header p{
+	margin: 0;
+}
+
+
+}
+
 </style>
+
 </head>
 <body>
 
