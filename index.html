@@ -262,6 +262,17 @@ article div#articleBody2 section{
 	overflow: visible;
 }
 
+/* 2段組み IE8~9 & Opera */
+article div#articleBody2 section{
+	clear: both;
+	float: left;
+	position: relative;
+}
+
+article div#articleBody2 section+section{
+	margin: right;
+}
+
 
 }
 /*====== タブッレット 用の設定 ======*/
